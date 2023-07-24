@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="">
+
+    <!--Container-->
+    <div class="container-md ">
+        <!--Header-->
+        <header id="header" class="bg-secondary text-white d-flex flex-column m-0">
+            <h1 class="h1 m-auto my-2 fw-bolder">BooKeeper</h1>
+            <p class=" m-auto ">Books for Noobs!</p>
+            <form action="submit" class="d-flex flex-column">
+                <input type="text" placeholder="Search for books here..." class="p-2 m-auto my-4 rounded border " id="search-books">
+            </form>
+        </header>
+        <!--Header ends-->
+
+        <!--MAIN list-->
+        <main>
+            <ul type="none" class="m-top-4 p-2">
+                <li class="d-flex justify-content-between my-4">
+                    <div class="mx-2 p-1 display-6 fw-200">Oliver Twist</div>
+                    <button class="btn btn-secondary del-btn">delete</button>
+                </li>
+                <li class="d-flex justify-content-between my-4">
+                    <div class="mx-2 p-1 display-6 fw-200">Hello Nemo!</div>
+                    <button class="btn btn-secondary del-btn">delete</button>
+                </li>
+                <li class="d-flex justify-content-between my-4">
+                    <div class="mx-2 p-1 display-6 fw-200">Mastering Python Completely</div>
+                    <button class="btn btn-secondary del-btn">delete</button>
+                </li>
+                <li class="d-flex justify-content-between my-4">
+                    <div class="mx-2 p-1 display-6 fw-200">Night At the Call Centre</div>
+                    <button class="btn btn-secondary del-btn">delete</button>
+                </li>
+            </ul>
+        </main>
+        <!--main list ends-->
+
+        <!--Footer-->
+        <form action="submit" class="d-flex flex-column">
+            <input type="checkbox" id="checkbox" class="p-2 m-auto" >
+            <label for="checkbox">Hide All Books</label>
+            <div id="add-section" class="d-flex justify-content-center">
+                <input type="text" placeholder="Add the Book..." class="p-1" id="add-book">
+                <button class="btn btn-secondary" id="add-btn">ADD</button>
+            </div>
+        </form>
+        <!--Footer ends-->
+    </div>
+    <!--Container ends-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
